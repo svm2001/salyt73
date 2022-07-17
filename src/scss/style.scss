@@ -1,0 +1,28 @@
+@import 'fonts';
+@import 'burger/burger';
+@import 'canvas/canvas';
+@import 'page-blocks/header/header';
+@import 'button/button';
+@import 'popup/popup';
+@import 'slider/slick-slider';
+@import 'inputs/inputs';
+@import 'inputs/checkbox';
+@import "social-links/social-links";
+@import "pages/main";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  font-family: Inter,sans-serif;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}

@@ -1,0 +1,24 @@
+.introduce {
+    background-image: url("../images/pages/main/bg.webp");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: calc(100vh - 58px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__content {
+        width: 100%;
+    }
+
+    &__text {
+        font-size: 132px;
+        color: white;
+        text-align: center;
+        margin-bottom: 50px;
+        font-weight: 600;
+        pointer-events: none;
+        user-select: none
+    }
+}

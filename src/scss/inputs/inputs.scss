@@ -1,0 +1,132 @@
+.input {
+    background: transparent;
+    outline: none;
+    border: none;
+    &__tel {
+        padding: 10px;
+        color: white;
+        font-size: 16px;
+        width: 160px;
+        transition: .5s;
+        &::placeholder {
+            color: gray;
+            transition: .3s;
+        }
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        &:focus {
+            &::placeholder {
+                color: white;
+            }
+        }
+    }
+}
+
+.input__one-more-wrapper {
+    position: relative;
+    &:before {
+        content: '';
+        position: absolute;
+        width: 136px;
+        height: 1px;
+        background: white;
+        left: 11px;
+        bottom: 25px;
+    }
+}
+
+.input__err {
+    display: block;
+    position: relative;
+    color: #ff87c2;
+    font-weight: 600;
+    text-align: center;
+    opacity: 0;
+    transition: 1s;
+    visibility: hidden;
+    max-width: 160px;
+    font-size: 10px;
+}
+
+.input__correct-number {
+    display: block;
+    color: white;
+    font-weight: 600;
+    text-align: center;
+    opacity: 0;
+    transition: 1s;
+    visibility: hidden;
+    max-width: 160px;
+    font-size: 10px;
+    position: relative;
+    top: -10px;
+}
+
+.input__tel.invalid + .input__err {
+    opacity: 1;
+    visibility: visible;
+}
+
+.input__tel.valid ~ .input__correct-number {
+    opacity: 1;
+    visibility: visible;
+}
+
+.input__wrapper {
+    display: flex;
+}
+
+.input__button {
+    position: relative;
+    width: 0;
+    height: 0;
+    border: 0;
+    &:before {
+        content: '';
+        position: absolute;
+        transition: .5s;
+        top: 10px;
+        left: 15px;
+        width: 20px;
+        height: 25px;
+        background-image: url("/images/button/right.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center center;
+    }
+
+    &:hover:before {
+        transform: translateX(10px);
+    }
+}
+
+.input__checkbox {
+    width: 36px;
+    height: 36px;
+    margin-right: 10px;
+    outline: none;
+    border: none;
+    position: relative;
+    top: 3px;
+}
+
+.policy {
+    display: flex;
+    align-items: flex-start;
+    color: white;
+    margin-bottom: 15px;
+
+    a {
+        color: white;
+        &:hover {
+            border-bottom: 1px solid white;
+        }
+    }
+}
+
+.squaredFour {
+    display: flex;
+}

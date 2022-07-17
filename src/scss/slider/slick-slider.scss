@@ -1,0 +1,43 @@
+.slider {
+    position: relative;
+    min-width: 0;
+}
+
+.slick-track {
+    display: flex;
+    justify-content: space-between;
+}
+
+.slick-list {
+    overflow: hidden;
+}
+
+.slider--introduce {
+    .slider__item {
+        display: flex;
+        align-items: center;
+        color: transparent;
+        font-weight: 600;
+        text-align: center;
+        font-size: 40px;
+        user-select: none
+    }
+}
+
+.slick-current {
+    .slider__item {
+        color: white;
+        pointer-events: none;
+    }
+}
+
+.slider--introduce-bg {
+    padding: 20px 0;
+    background: rgba(10, 0, 51, .65);
+    width: 44vw;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    border: 1px solid white;
+    border-radius: 20px;
+}

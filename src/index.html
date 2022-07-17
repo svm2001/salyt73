@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/head.html', {
+'title': 'Главная'
+})
+<body>
+<div class="wrapper">
+    @@include('html/canvas/canvas.html', {})
+    @@include('html/header.html', {})
+    <main class="main">
+        <div class="main__wrapper">
+            <section class="introduce">
+                <div class="introduce__content">
+                    <p class="introduce__text">c 2007 года</p>
+                    <div class="slider--introduce-bg">
+                        <div class="slider slider--introduce">
+                            <div class="slider__item">Зажигаем сердца</div>
+                            <div class="slider__item">Запускаем хлопушки</div>
+                            <div class="slider__item">Зажигаем фонтаны</div>
+                            <div class="slider__item">Запускаем салюты</div>
+                            <div class="slider__item">Пускаем тяжелый дым</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+    </main>
+    @@include('html/footer.html', {})
+    @@include('html/popups.html', {})
+</div>
+<script src="js/app.min.js"></script>
+</body>
+</html>
